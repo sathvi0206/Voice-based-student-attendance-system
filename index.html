@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🎤 Voice Student Attendance</h1>
+        <p class="subtitle">Mark attendance using your voice</p>
+
+        <div class="voice-box">
+            <button id="startBtn">🎙️ Start Voice Attendance</button>
+            <p id="status">Click the button and say a student's name</p>
+            <div id="voiceText">Your voice will appear here...</div>
+        </div>
+
+        <div class="student-section">
+            <h2>Student List</h2>
+
+            <div class="student" data-name="Arun">
+                <span>Arun</span>
+                <span class="status absent">Absent</span>
+            </div>
+
+            <div class="student" data-name="Priya">
+                <span>Priya</span>
+                <span class="status absent">Absent</span>
+            </div>
+
+            <div class="student" data-name="Rahul">
+                <span>Rahul</span>
+                <span class="status absent">Absent</span>
+            </div>
+
+            <div class="student" data-name="Divya">
+                <span>Divya</span>
+                <span class="status absent">Absent</span>
+            </div>
+
+            <div class="student" data-name="Karthik">
+                <span>Karthik</span>
+                <span class="status absent">Absent</span>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>Attendance Summary</h2>
+
+            <div class="summary-box">
+                <div>
+                    <h3 id="total">5</h3>
+                    <p>Total Students</p>
+                </div>
+
+                <div>
+                    <h3 id="present">0</h3>
+                    <p>Present</p>
+                </div>
+
+                <div>
+                    <h3 id="absent">5</h3>
+                    <p>Absent</p>
+                </div>
+            </div>
+
+            <button id="resetBtn" class="reset">Reset Attendance</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
